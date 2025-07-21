@@ -34,7 +34,7 @@ img {
 }
 .container {
     width: 90%;
-    max-width: 1280px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 .pre-header {
@@ -64,9 +64,9 @@ h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #005ec4;
+    color: #ffcc00;
     padding: 16px 30px;
-    border: 1px solid#005ec4;
+    border: 1px solid #ffcc00;
     background: transparent;
     display: inline-block;
     text-align: center;
@@ -76,15 +76,16 @@ h1 {
 }
 .secondry-btn {
     background-color: #F0F1F3;
+    color: #000;
     border: 1px solid transparent;
 }
 .secondry-btn:hover, .primary-btn:hover {
-    background: linear-gradient(to left, transparent 50%, #005ec4 50%);
+    background: linear-gradient(to left, transparent 50%, #ffcc00 50%);
     background-size: 200% 100%;
     color: #fff;
     background-position: left bottom;
     animation: gradientAnimation .5s ;
-    border: 1px solid #005ec4;
+    border: 1px solid #ffcc00;
 }
 .default-text {
     font-family: "Roboto", sans-serif;
@@ -124,6 +125,9 @@ h1 {
 }
 .logo {
     max-width: 200px;
+    font-size: 20px;
+    color: #ffcc00;
+    font-weight: bold;
 }
 header.header.top {
     position: fixed;
@@ -167,7 +171,7 @@ nav ul {
     color: #000000;
 }
 .nav-link-item:hover {
-    color: #005ec4;
+    color: #ffcc00;
 }
 .menu-icon {
     display: none;
@@ -195,7 +199,10 @@ nav ul {
     align-items: center;
 }
 .banner-left {
-    max-width: 720px;
+    max-width: 850px;
+}
+h1 span {
+    color: #ffcc00;
 }
 .banner-detail{
     font-family: "Roboto", sans-serif;
@@ -204,33 +211,14 @@ nav ul {
     margin: 25px 0;
     color: #f3f3f3;
     line-height: 1.5;
-    max-width: 620px;
+    max-width: 660px;
 }
-/* about setion styles here  */
-.about-row {
-    background-color: #fff;
-    padding: 100px 0 100px;
-    overflow: hidden;
-    
+.btn-grp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
-.about-row .secondry-heading {
-    font-size: 48px;
-}
-.about-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 100px; 
-    justify-items: center; 
-    align-items: center; 
-}
-.about-img-wrapper {
-    border-radius: 10px;
-    overflow: hidden;
-}
-.about-img-wrapper img {
-    transition: all 0.5s ease-in-out;
-}
-
 @media screen and (max-width: 1200px) {
     .header {
         padding: 25px 0;
@@ -427,5 +415,15 @@ nav ul {
     }
     .banner-detail {
         font-size: 16px;
+    }
+}
+
+/* keyframes here  */
+@keyframes gradientAnimation {
+    0% {
+        background-position: right bottom;
+    }
+    100% {
+        background-position: left bottom;
     }
 }
