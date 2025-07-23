@@ -39,10 +39,11 @@ img {
 }
 .pre-header {
     font-family: "Roboto", sans-serif;
-    color: #2b3a67;
-    font-size: 22px;
-    font-weight: 500;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
     line-height: 1;
+    text-transform: uppercase;
     margin-bottom: 10px;
 }
 h1 {
@@ -58,15 +59,15 @@ h1 {
     font-size: 48px;
     line-height: 1.2;
     font-weight: 700;
-    color: #005ec4;
+    color: 	#cc7a00 ;
 }
 .primary-btn, .secondry-btn {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #ffcc00;
+    color: #cc7a00 ;
     padding: 16px 30px;
-    border: 1px solid #ffcc00;
+    border: 1px solid #cc7a00 ;
     background: transparent;
     display: inline-block;
     text-align: center;
@@ -80,18 +81,18 @@ h1 {
     border: 1px solid transparent;
 }
 .secondry-btn:hover, .primary-btn:hover {
-    background: linear-gradient(to left, transparent 50%, #ffcc00 50%);
+    background: linear-gradient(to left, transparent 50%, #cc7a00  50%);
     background-size: 200% 100%;
     color: #fff;
     background-position: left bottom;
     animation: gradientAnimation .5s ;
-    border: 1px solid #ffcc00;
+    border: 1px solid #cc7a00 ;
 }
 .default-text {
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     display: block;
-    margin: 25px 0;
+    margin: 20px 0;
     color: #333;
     line-height: 1.5;
     max-width: 620px;
@@ -119,19 +120,19 @@ h1 {
     left: 0;
     right: 0;
     padding: 20px 0;
-    border-bottom: 1px solid #fffafa;
+    border-bottom: 1px solid #b8870b39;
     transition: all 0.7s ease-in-out;
-    background: #fffafae7;
+    /* background: #fffafae7; */
 }
 .logo {
     max-width: 200px;
     font-size: 20px;
-    color: #ffcc00;
+    color: #cc7a00 ;
     font-weight: bold;
 }
 header.header.top {
     position: fixed;
-    background: #ffffffdf;
+    background: #dedededf;
     border-bottom: 1px solid #000;
     padding: 10px 0;
     transition: all 0.7s ease-in-out;
@@ -168,10 +169,10 @@ nav ul {
     font-size: 20px;
     line-height: 1;
     transition: all 0.5s ease-in-out;
-    color: #000000;
+    color: #fff;
 }
 .nav-link-item:hover {
-    color: #ffcc00;
+    color: #cc7a00 ;
 }
 .menu-icon {
     display: none;
@@ -181,7 +182,9 @@ nav ul {
     display: flex; 
     gap: 10px;
 }
-
+.btn-grp.d-md {
+    display: none;
+}
 /* main section starts here  */
 .banner {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0.18) 100%), url(../assets/images/banner.webp) no-repeat center;
@@ -202,7 +205,7 @@ nav ul {
     max-width: 850px;
 }
 h1 span {
-    color: #ffcc00;
+    color: #cc7a00 ;
 }
 .banner-detail{
     font-family: "Roboto", sans-serif;
@@ -220,119 +223,98 @@ h1 span {
     flex-wrap: wrap;
 }
 /* HOW IT WORKS SECTION */
-/* Main Wrapper */
 .how-it-works-wrapper {
   background-color: #fdf5f0;
-  padding: 60px 20px;
+  padding: 100px 0 50px;
   font-family: 'Poppins', sans-serif;
   color: #333;
 }
-
-/* Container */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 /* --- INTRO SECTION --- */
 .how-it-works-intro {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   align-items: center;
-  margin-bottom: 60px;
 }
-
 .intro-text {
   flex: 1;
   min-width: 300px;
 }
-
-.intro-subtitle {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #8b6e4c;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.intro-title {
-  font-size: 36px;
-  font-weight: 700;
-  margin: 10px 0 20px;
-  color: #000;
-}
-
-.intro-paragraph {
-  font-size: 16px;
-  margin-bottom: 15px;
-  line-height: 1.6;
-  color: #444;
-}
-
 .intro-list {
   list-style: none;
   padding: 0;
   margin-top: 20px;
 }
-
 .intro-list li {
   margin-bottom: 10px;
   font-size: 16px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
 }
-
 /* --- Images --- */
 .intro-images {
   flex: 1;
   min-width: 300px;
   display: flex;
-  flex-direction: column;
   gap: 20px;
 }
-
 .intro-image {
   border-radius: 10px;
   width: 100%;
   height: auto;
   object-fit: cover;
+  max-width: 48%;
+  min-height: 400px;
+  margin-bottom: 60px;
 }
-
 .sub-image {
-  width: 80%;
-  margin-left: auto;
+    width: 48%;
+    margin-left: auto;
+    min-height: 300px;
+    margin: 60px 0 0;
 }
-
 /* --- HOW IT WORKS CARDS --- */
-.section-title {
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  color: #000;
+.how-it-works-steps {
+    background: #fdf5f0;
+    padding: 50px 0 100px;
 }
-
+.how-it-works-steps h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
 .step-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
+  align-items: flex-start;
 }
-
 .step-card {
   flex: 1;
-  min-width: 250px;
-  max-width: 350px;
-  margin: auto;
+  min-width: 200px;
+  max-width: 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(184, 134, 11, 0.15); /* rgba of #cc7a00  */
+  transition: all .5s ease-in-out;
 }
-
+.step-card:hover {
+    margin-top: -10px;
+}
 .step-icon {
-  width: 80px;
-  display: block;
-  margin: 0 auto 20px;
+    width: 80px;
+    display: block;
+    margin: 0 auto 20px;
+    object-fit: contain;
+}
+.step-icon.sm {
+    width: 60px;
+    height: 80px;
 }
 .step-title {
+    font-family: "Roboto Slab", serif;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -341,8 +323,472 @@ h1 span {
 .step-description {
   font-size: 16px;
   line-height: 1.5;
-  color: #555;
+  color: #333;
+  font-family: "Roboto", sans-serif;
 }
+/* why member ship works  */
+.membership-work {
+    padding: 100px 0;
+ background: #fff;
+}
+
+.wmw-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px 5% 100px;
+  gap: 60px;
+ background: linear-gradient(270deg, #fceedb 40%, #fceedb39 60%), 
+ linear-gradient(181deg, #fceedb 40%, #fceedb39 60%), 
+ url(../assets/images/member-works.webp) no-repeat left bottom / 60%;
+   position: relative;
+  border-radius: 60px;
+}
+.why-membership-left {
+  max-width: 540px;
+
+}
+.wmw-inner  h2 {
+  margin-bottom: 20px;
+    color: #000;
+}
+.why-membership-description {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+.why-membership-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+.wm-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  font-size: 0.95rem;
+}
+.wm-item span {
+  font-family: "Roboto Slab", serif;
+    font-size: 22px;
+    line-height: 1;
+}
+.why-membership-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.membership-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+}
+
+/* top rated barber */
+.barber-preview {
+  background: #fefefe;
+  padding: 90px 20px;
+  text-align: center;
+}
+.subheading {
+  font-size: 1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+.barber-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+.barber-card {
+  background: linear-gradient(to bottom, #fff, #f9f9f9);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.barber-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.1);
+}
+.barber-card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+.barber-info {
+  padding: 24px;
+  text-align: left;
+}
+.barber-info h3 {
+  font-size: 1.3rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.barber-info .rating {
+  color: #cc7a00 ;
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.barber-info .rating i {
+  margin-right: 2px;
+}
+
+.barber-info .rating span {
+  color: #555;
+  font-weight: normal;
+  margin-left: 6px;
+}
+
+.barber-info .location {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.barber-info .location i {
+  margin-right: 6px;
+  color: #cc7a00 ;
+}
+
+.barber-info .specialty {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.view-profile-btn {
+  display: inline-block;
+  background-color: #cc7a00 ;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 28px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-profile-btn:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+/* Barber Pitch Section */
+.barber-boost-section {
+  background-color: #fff;
+  padding: 80px 0px;
+}
+.barber-boost-section h2 {
+    text-align: left;
+  margin: 0 0 60px;
+  max-width: 850px;
+}
+.barber-boost-section h2 span{
+    color: #000;
+}
+.boost-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+.boost-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 40px;
+  border-radius: 18px;
+  min-height: 200px;
+  background: linear-gradient(rgba(204, 122, 0, 0) , rgba(204, 122, 0, 0.051)), linear-gradient(67deg, #462a00 , #cc7a00   93.86%);
+}
+.boost-item:nth-of-type(even) {
+    background: linear-gradient(rgba(204, 122, 0, 0) , rgba(204, 122, 0, 0.051)), linear-gradient(265deg, #462a00 8.98%, #cc7a00   93.86%);
+
+}
+.boost-item .icon {
+  font-size: 30px;
+  color: #fff;
+  margin-top: -20px;
+  min-width: 30px;
+}
+.boost-item h3 {
+  font-size: 30px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.boost-item p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 400px;
+}
+
+.boost-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .boost-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .boost-item .icon {
+    margin: 0 0 10px;
+  }
+
+  .boost-item div {
+    text-align: center;
+  }
+}
+
+/* Pricing Plans Section */
+.section-pricing-plans {
+  background: #fefefe;
+  padding: 80px 20px;
+}
+.section-pricing-plans h2 {
+    text-align: center;
+}
+.section-pricing-plans .default-text {
+    text-align: center;
+    margin: 10px auto 40px;
+    display: block;
+}
+.pricing-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.pricing-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  width: 300px;
+  padding: 30px 24px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+.pricing-card-featured {
+  border: 2px solid #cc7a00 ;
+  background: linear-gradient(135deg, #fff8d4, #ffffff);
+}
+.plan-name {
+  font-size: 16px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  background: #cc7a00;
+  border-radius: 100px;
+  margin: -45px auto 0;
+  max-width: max-content;
+}
+.plan-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  margin: 20px 0;
+  font-family: "Roboto Slab", serif;
+}
+.plan-price span {
+  font-size: 0.95rem;
+  font-weight: normal;
+  color: #666;
+}
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.plan-features li {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #444;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.plan-features li i {
+  color: #cc7a00 ;
+  font-size: 1rem;
+  margin-top: 0px;
+}
+
+
+
+/* Footer section css */
+.site-footer {
+  background: linear-gradient(135deg, #2e2e2e, #6d6c6c);
+  color: #fff;
+  padding: 60px 0px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-brand h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer-brand p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #ffcc00;
+}
+
+.footer-contact p {
+  margin: 8px 0;
+  color: #ccc;
+}
+
+.footer-contact a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #ffcc00;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+  background: linear-gradient(to right, #ffcc00, #ff9900);
+  padding: 6px;
+  border-radius: 4px;
+  
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to right, #ffcc00, #ff9900);
+  /* filter: brightness(0) invert(1);
+  transition: transform 0.3s; */
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0.9) sepia(1) hue-rotate(30deg);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* footer section css end */
+/* Responsive */
+@media (max-width: 768px) {
+  .pricing-cards-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .barber-preview h2 {
+    font-size: 2.2rem;
+  }
+
+  .subheading {
+    font-size: 0.95rem;
+  }
+
+  .barber-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .barber-info .specialty {
+    font-size: 0.9rem;
+  }
+
+  .view-profile-btn {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}
+
+
 
 @media screen and (max-width: 1200px) {
     .header {

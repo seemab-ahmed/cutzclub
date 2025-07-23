@@ -18,3 +18,33 @@ function myFunction() {
     toggleBtnElement.classList.toggle("toggle-open");
   }
   document.querySelector(".toggle-btn").addEventListener("click", myFunction);
+
+// testimonial
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".testimonial-track");
+  const dots = document.querySelectorAll(".dot");
+  const testimonials = document.querySelectorAll(".testimonial");
+  let currentIndex = 0;
+
+  function updateSlider(index) {
+    const offset = -index * 100;
+    track.style.transform = `translateX(${offset}%)`;
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+
+    currentIndex = index;
+  }
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => updateSlider(i));
+  });
+
+  // Optional autoplay
+  setInterval(() => {
+    let next = (currentIndex + 1) % testimonials.length;
+    updateSlider(next);
+  }, 6000);
+});
+

@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CutzClub</title>
+
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!-- Link style sheets here -->
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/style.css">
@@ -14,7 +18,7 @@
     <!-- header starts here  -->
     <header class="header">
         <div class="container">
-            <a class="logo" href="./index.html"><img src="" alt="CutzClub" /></a>
+            <a class="logo" href="./index.html"><img src="assets//images/cutzclub.webp" alt="CutzClub" /></a>
             <div class="toggle-btn"></div>
             <nav>
                 <ul>
@@ -23,10 +27,15 @@
                     <li><a href="#services" class="nav-link-item">Services</a></li>
                     <li><a href="./contact.html" class="nav-link-item">Contact</a></li>
                 </ul>
-                <div class="btn-wrapper ">
-                    <a href="#" class="primary-btn get-started-btn">Get Started</a>
+                <div class="btn-grp d-md">
+                    <a href="#" class="secondry-btn">Login</a>
+                    <a href="#" class="primary-btn">Join Now</a>
                 </div>
             </nav>
+            <div class="btn-grp">
+                <a href="#" class="secondry-btn">Login</a>
+                <a href="#" class="primary-btn">Join Now</a>
+            </div>
 
         </div>
     </header>
@@ -53,18 +62,17 @@
     </section>
     <!-- how-it-works section here  -->
     <section class="how-it-works-wrapper">
-
         <!-- Intro Section -->
         <div class="how-it-works-intro container">
             <div class="intro-text">
-                <span class="intro-subtitle">Since 2006</span>
-                <h2 class="intro-title">CutzClub Barber Shop</h2>
-                <p class="intro-paragraph">
+                <span class="pre-header">Since 2006</span>
+                <h2 class="secondry-heading">CutzClub Barber Shop</h2>
+                <p class="default-text intro-paragraph">
                     Come experience a unique and edgy barbershop for all your hair and beard needs.
                     Ravida haretra nuam enim mi obortis eset uctus enec accumsan eu justo alisuame amet auctor orci
                     donec vitae vehicula risus.
                 </p>
-                <p class="intro-paragraph">
+                <p class="default-text intro-paragraph">
                     Barber utate ons amet ravida haretra nuam the duru miss uctus the drana accumsan justo aliquam sit
                     amet auctor orci done vitae risus duise nisan sapien silver on the accumsan id mauris apien.
                 </p>
@@ -81,10 +89,12 @@
         </div>
 
         <!-- How It Works Steps -->
-        <div class="how-it-works-steps container">
-            <h2 class="section-title">How It Works</h2>
+
+    </section>
+    <section class="how-it-works-steps">
+        <div class=" container">
+            <h2 class="secondry-heading">How It Works</h2>
             <div class="step-cards">
-                <!-- Step 1 -->
                 <div class="step-card">
                     <img src="assets/icons/hairdress.png" alt="Find Your Barber" class="step-icon">
                     <h3 class="step-title">Find Your Barber</h3>
@@ -93,19 +103,15 @@
                         services.
                     </p>
                 </div>
-
-                <!-- Step 2 -->
                 <div class="step-card">
-                    <img src="assets/icons/pick-plan.png" alt="Pick Your Plan" class="step-icon">
+                    <img src="assets/icons/checklist.png" alt="Pick Your Plan" class="step-icon sm">
                     <h3 class="step-title">Pick Your Plan</h3>
                     <p class="step-description">
                         Choose a flexible membership (1-4 cuts/month). Lock in savings and secure consistent cuts.
                     </p>
                 </div>
-
-                <!-- Step 3 -->
                 <div class="step-card">
-                    <img src="assets/icons/book-show.png" alt="Book and Show Up" class="step-icon">
+                    <img src="assets/icons/appointment.png" alt="Book and Show Up" class="step-icon sm">
                     <h3 class="step-title">Book and Show Up</h3>
                     <p class="step-description">
                         Schedule in seconds. No DMs, no waiting. Just show up and stay fresh.
@@ -113,10 +119,251 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="membership-work">
+        <div class="container">
+            <div class="wmw-inner">
+            <div class="why-membership-left">
+                <h2 class="secondry-heading">Why Membership Works
+                </h2>
+                <p class="default-text">
+                   Whether you're new or fully booked, CutzClub helps you attract clients, save time, and boost income — all in one place.
+                </p>
+            </div>
 
+            <ul class="why-membership-list">
+                <li class="wm-item">
+                    <img src="./assets/icons/checklist.png" alt="Appointments" class="membership-icon">
+                    <span>Streamlined Appointments</span>
+                </li>
+                <li class="wm-item">
+                    <img src="./assets/icons/hairdress.png" alt="Promotion" class="membership-icon">
+                    <span>Free Client Promotion</span>
+                </li>
+                <li class="wm-item">
+                    <img src="./assets/icons/hairdress.png" alt="Reviews" class="membership-icon">
+                    <span>Get Rated & Reviewed</span>
+                </li>
+                <li class="wm-item">
+                    <img src="./assets/icons/checklist.png" alt="Earnings" class="membership-icon">
+                    <span>Keep More of Your Earnings</span>
+                </li>
+                <li class="wm-item">
+                    <img src="./assets/icons/checklist.png" alt="Analytics" class="membership-icon">
+                    <span>Track Growth & Performance</span>
+                </li>
+                <li class="wm-item">
+                    <img src="./assets/icons/appointment.png" alt="Reminders" class="membership-icon">
+                    <span>SMS & Email Reminders</span>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+    <!-- barber profile section start -->
+    <section class="barber-preview">
+        <div class="container">
+            <h2 class="secondry-heading">Top Rated Barbers Near You</h2>
+            <p class="subheading">Discover highly rated professionals delivering top-notch grooming services in your
+                city.</p>
+
+            <div class="barber-card-grid">
+
+                <div class="barber-card">
+                    <img src="./assets/images/james.png" alt="James Carter">
+                    <div class="barber-info">
+                        <h3>James Carter</h3>
+                        <p class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <span>(4.9)</span>
+                        </p>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Brooklyn, NY</p>
+                        <p class="specialty">Expert in skin fades and detailed beard grooming with a modern touch.</p>
+                        <a href="#" class="view-profile-btn">View Profile</a>
+                    </div>
+                </div>
+
+                <div class="barber-card">
+                    <img src="./assets/images/vanessa.png" alt="Vanessa Lopez">
+                    <div class="barber-info">
+                        <h3>Vanessa Lopez</h3>
+                        <p class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(5.0)</span>
+                        </p>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Miami, FL</p>
+                        <p class="specialty">Specialist in women's cuts, natural styling, and loc maintenance.</p>
+                        <a href="#" class="view-profile-btn">View Profile</a>
+                    </div>
+                </div>
+
+                <div class="barber-card">
+                    <img src="./assets/images/tyrone.png" alt="Tyrone Mitchell">
+                    <div class="barber-info">
+                        <h3>Tyrone Mitchell</h3>
+                        <p class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(4.7)</span>
+                        </p>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Dallas, TX</p>
+                        <p class="specialty">Known for sharp linings, classic cuts, and fast turnarounds.</p>
+                        <a href="#" class="view-profile-btn">View Profile</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Barber Pitch Section -->
+    <section class="barber-boost-section">
+        <div class="container">
+            <h2 class="secondry-heading">Barbers, This Is More Than Just a Booking Tool. <span>It’s a Business
+                    Booster.</span></h2>
+
+            <div class="boost-grid">
+                <div class="boost-item">
+                    <i class="fas fa-sack-dollar icon"></i>
+                    <div>
+                        <h3>Keep 95–100% of Your Earnings</h3>
+                        <p>Choose the plan that works for you – with transparent, low commission options.</p>
+                    </div>
+                </div>
+
+                <div class="boost-item">
+                    <i class="fas fa-calendar-check icon"></i>
+                    <div>
+                        <h3>Automated Bookings & Reminders</h3>
+                        <p>No more missed appointments or back-and-forth DMs.</p>
+                    </div>
+                </div>
+
+                <div class="boost-item">
+                    <i class="fas fa-map-pin icon"></i>
+                    <div>
+                        <h3>Get Discovered by New Clients</h3>
+                        <p>Be featured in local searches and our ‘Top Rated’ spotlight.</p>
+                    </div>
+                </div>
+
+                <div class="boost-item">
+                    <i class="fas fa-star icon"></i>
+                    <div>
+                        <h3>Build Your Brand</h3>
+                        <p>Showcase your cuts with a photo gallery and 5-star reviews.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boost-cta">
+                <p>Ready to grow your barber business?</p>
+                <a href="#join" class="primary-btn">Join CutzClub Today</a>
+            </div>
+        </div>
     </section>
 
 
+    <!-- Pricing Plans Section -->
+    <section class="section-pricing-plans">
+        <div class="container">
+            <h2 class="secondry-heading">Choose the Right Plan for You</h2>
+            <p class="default-text">Simple, transparent pricing designed to match your growth.</p>
+
+            <div class="pricing-cards-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <h3 class="plan-name">Starter</h3>
+                    <p class="plan-price">$0 <span>/month</span></p>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check-circle"></i> Manage up to 5 clients</li>
+                        <li><i class="fas fa-check-circle"></i> Listed in CutzClub directory</li>
+                        <li><i class="fas fa-check-circle"></i> Basic calendar booking</li>
+                        <li><i class="fas fa-check-circle"></i> Basic calendar booking</li>
+                        <li><i class="fas fa-check-circle"></i> 10% platform fee per booking</li>
+                    </ul>
+                    <button class="primary-btn">Get Started</button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card pricing-card-featured">
+                    <h3 class="plan-name">Pro</h3>
+                    <p class="plan-price">$19.99 <span>/month</span></p>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check-circle"></i> Serve up to 25 clients</li>
+                        <li><i class="fas fa-check-circle"></i> Reviews & photo gallery</li>
+                        <li><i class="fas fa-check-circle"></i> Priority search placement</li>
+                        <li><i class="fas fa-check-circle"></i> Monthly performance reports</li>
+                        <li><i class="fas fa-check-circle"></i> 5% platform fee</li>
+                    </ul>
+                    <button class="primary-btn">Upgrade to Pro</button>
+                </div>
+
+                <!-- Elite Plan -->
+                <div class="pricing-card">
+                    <h3 class="plan-name">Elite</h3>
+                    <p class="plan-price">$49.99 <span>/month</span></p>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check-circle"></i> Unlimited clients</li>
+                        <li><i class="fas fa-check-circle"></i> Featured homepage placement</li>
+                        <li><i class="fas fa-check-circle"></i> Text & email reminders</li>
+                        <li><i class="fas fa-check-circle"></i> Advanced performance analytics</li>
+                        <li><i class="fas fa-check-circle"></i> 0% platform fee</li>
+                    </ul>
+                    <button class="primary-btn">Go Elite</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section start -->
+<footer class="site-footer">
+    <div class="container">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h3>CutzClub</h3>
+      <p>Barbers. Clients. Connected.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Find a Barber</a></li>
+        <li><a href="#">I'm a Barber</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">How it Works</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:support@cutzclub.com">support@cutzclub.com</a></p>
+      <p>Follow us:</p>
+      <div class="social-icons">
+        <a href="#"><img src="./assets/icons/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="./assets//icons/insta.png" alt="Instagram"></a>
+        <a href="#"><img src="./assets/icons/twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 CutzClub. All rights reserved.</p>
+  </div>
+  </div>
+</footer>
     <!-- link script here -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/custom.js"></script>
