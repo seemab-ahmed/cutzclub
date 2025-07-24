@@ -12,7 +12,25 @@
     <!-- Link style sheets here -->
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- animention link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+     <!-- Slick Carousel (used for carousels or sliders) -->
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <!-- Link Main Stylesheet (Your custom CSS) -->
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+
+  <!-- Bootstrap (latest stable version) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 <body>
     <!-- header starts here  -->
@@ -28,13 +46,13 @@
                     <li><a href="./contact.html" class="nav-link-item">Contact</a></li>
                 </ul>
                 <div class="btn-grp d-md">
-                    <a href="#" class="secondry-btn">Login</a>
-                    <a href="#" class="primary-btn">Join Now</a>
+                    <a href="#" class="secondry-btn sm-hidden">Login</a>
+                    <a href="#" class="primary-btn sm-hidden">Join Now</a>
                 </div>
             </nav>
             <div class="btn-grp">
-                <a href="#" class="secondry-btn">Login</a>
-                <a href="#" class="primary-btn">Join Now</a>
+                <a href="#" class="secondry-btn sm-hidden">Login</a>
+                <a href="#" class="primary-btn sm-hidden">Join Now</a>
             </div>
 
         </div>
@@ -42,8 +60,8 @@
     <!-- Hero section starts here  -->
     <section class="banner">
         <div class="container">
-            <div class="banner-left" data-aos="fade-right" data-aos-delay="600">
-                <h1>
+            <div class="banner-left">
+                <h1 class="banner-h1">
                     Fresh Cuts on Your Schedule. <span>One Membership at a Time</span>
                 </h1>
                 <p class="banner-detail">
@@ -83,8 +101,8 @@
                 </ul>
             </div>
             <div class="intro-images">
-                <img src="assets/images/banner.webp" alt="Barber cutting hair" class="intro-image main-image">
-                <img src="assets/images/banner.webp" alt="Barber with trimmer" class="intro-image sub-image">
+                <img data-aos="fade-down" data-aos-duration="800" data-aos-delay="400" src="assets/images/banner.webp" alt="Barber cutting hair" class="intro-image main-image">
+                <img data-aos="fade-down" data-aos-duration="800" data-aos-delay="400" src="assets/images/banner.webp" alt="Barber with trimmer" class="intro-image sub-image">
             </div>
         </div>
 
@@ -93,8 +111,10 @@
     </section>
     <section class="how-it-works-steps">
         <div class=" container">
-            <h2 class="secondry-heading">How It Works</h2>
-            <div class="step-cards">
+            <h2 class="secondry-heading" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">How It Works</h2>
+            <div class="step-cards" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
                 <div class="step-card">
                     <img src="assets/icons/hairdress.png" alt="Find Your Barber" class="step-icon">
                     <h3 class="step-title">Find Your Barber</h3>
@@ -120,44 +140,52 @@
             </div>
         </div>
     </section>
+    <!-- why member ship -->
     <section class="membership-work">
         <div class="container">
             <div class="wmw-inner">
-            <div class="why-membership-left">
-                <h2 class="secondry-heading">Why Membership Works
-                </h2>
-                <p class="default-text">
-                   Whether you're new or fully booked, CutzClub helps you attract clients, save time, and boost income — all in one place.
-                </p>
-            </div>
+                <div class="why-membership-left">
+                    <h2 class="secondry-heading">Why Membership Works
+                    </h2>
+                    <p class="default-text">
+                        Whether you're new or fully booked, CutzClub helps you attract clients, save time, and boost
+                        income — all in one place.
+                    </p>
+                </div>
 
-            <ul class="why-membership-list">
-                <li class="wm-item">
-                    <img src="./assets/icons/checklist.png" alt="Appointments" class="membership-icon">
-                    <span>Streamlined Appointments</span>
-                </li>
-                <li class="wm-item">
-                    <img src="./assets/icons/hairdress.png" alt="Promotion" class="membership-icon">
-                    <span>Free Client Promotion</span>
-                </li>
-                <li class="wm-item">
-                    <img src="./assets/icons/hairdress.png" alt="Reviews" class="membership-icon">
-                    <span>Get Rated & Reviewed</span>
-                </li>
-                <li class="wm-item">
-                    <img src="./assets/icons/checklist.png" alt="Earnings" class="membership-icon">
-                    <span>Keep More of Your Earnings</span>
-                </li>
-                <li class="wm-item">
-                    <img src="./assets/icons/checklist.png" alt="Analytics" class="membership-icon">
-                    <span>Track Growth & Performance</span>
-                </li>
-                <li class="wm-item">
-                    <img src="./assets/icons/appointment.png" alt="Reminders" class="membership-icon">
-                    <span>SMS & Email Reminders</span>
-                </li>
-            </ul>
-        </div>
+                <ul class="why-membership-list">
+                    <li class="wm-item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700"
+                    data-aos-easing="ease-in-out" data-aos-offset="150">
+                        <img src="./assets/icons/checklist.png" alt="Appointments" class="membership-icon">
+                        <span>Streamlined Appointments</span>
+                    </li>
+                    <li class="wm-item" class="wm-item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700"
+                    data-aos-easing="ease-in-out" data-aos-offset="150">
+                        <img src="./assets/icons/hairdress.png" alt="Promotion" class="membership-icon">
+                        <span>Free Client Promotion</span>
+                    </li>
+                    <li class="wm-item" class="wm-item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700"
+                    data-aos-easing="ease-in-out" data-aos-offset="150">
+                        <img src="./assets/icons/hairdress.png" alt="Reviews" class="membership-icon">
+                        <span>Get Rated & Reviewed</span>
+                    </li>
+                    <li class="wm-item" class="wm-item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700"
+                    data-aos-easing="ease-in-out" data-aos-offset="150">
+                        <img src="./assets/icons/checklist.png" alt="Earnings" class="membership-icon">
+                        <span>Keep More of Your Earnings</span>
+                    </li>
+                    <li class="wm-item" class="wm-item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700"
+                    data-aos-easing="ease-in-out" data-aos-offset="150">
+                        <img src="./assets/icons/checklist.png" alt="Analytics" class="membership-icon">
+                        <span>Track Growth & Performance</span>
+                    </li>
+                    <li class="wm-item" class="wm-item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700"
+                    data-aos-easing="ease-in-out" data-aos-offset="150">
+                        <img src="./assets/icons/appointment.png" alt="Reminders" class="membership-icon">
+                        <span>SMS & Email Reminders</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -228,6 +256,106 @@
         </div>
     </section>
 
+     <!-- Testimonial Section Starts -->
+  <section class="testimonials-section">
+    <div class="container">
+       <h2 class="secondry-heading testi-center">What Our Clients Say</h2>
+      <div class="testimonials-slider">
+        <div class="testimonial-card">
+          <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
+          <blockquote class="testimonial-review">
+            "Cominfo delivered ahead of schedule and under budget a full-service solution for our project's
+            manufacturing data collection and retrieval needs."
+          </blockquote>
+          <div class="testi-detail">
+            <img src="assets//images/client_1.png" alt="Bryan Buchanan - 3M Company" class="testimonial-image"
+              loading="lazy" />
+            <div class="testi-role-name">
+              <h3 class="testimonial-name">Bryan Buchanan</h3>
+              <span class="testimonial-role">3M Company</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
+          <blockquote class="testimonial-review">
+            "Cominfo delivered ahead of schedule and under budget a full-service solution for our project's
+            manufacturing data collection and retrieval needs."
+          </blockquote>
+          <div class="testi-detail">
+            <img src="assets/images/client2.png" alt="Bryan Buchanan - 3M Company" class="testimonial-image"
+              loading="lazy" />
+            <div class="testi-role-name">
+              <h3 class="testimonial-name">Bryan Buchanan</h3>
+              <span class="testimonial-role">3M Company</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
+          <blockquote class="testimonial-review">
+            "Cominfo delivered ahead of schedule and under budget a full-service solution for our project's
+            manufacturing data collection and retrieval needs."
+          </blockquote>
+          <div class="testi-detail">
+            <img src="assets/images/client3.jpg" alt="Bryan Buchanan - 3M Company" class="testimonial-image"
+              loading="lazy" />
+            <div class="testi-role-name">
+              <h3 class="testimonial-name">Bryan Buchanan</h3>
+              <span class="testimonial-role">3M Company</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
+          <blockquote class="testimonial-review">
+            "Cominfo delivered ahead of schedule and under budget a full-service solution for our project's
+            manufacturing data collection and retrieval needs."
+          </blockquote>
+          <div class="testi-detail">
+            <img src="images/logos/testi_logo1.jpg" alt="Bryan Buchanan - 3M Company" class="testimonial-image"
+              loading="lazy" />
+            <div class="testi-role-name">
+              <h3 class="testimonial-name">Bryan Buchanan</h3>
+              <span class="testimonial-role">3M Company</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
+          <blockquote class="testimonial-review">
+            "After using Cominfo's services for only a few months now, I feel that the quality of service is truly
+            outstanding and indeed beyond our expectations."
+          </blockquote>
+          <div class="testi-detail">
+            <img src="images/logos/testi_logo2.jpg" alt="Lt. John Vilano - U.S. Army" class="testimonial-image"
+              loading="lazy" />
+            <div class="testi-role-name">
+              <h3 class="testimonial-name">Lt. John Vilano</h3>
+              <span class="testimonial-role">U.S. Army</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
+          <blockquote class="testimonial-review">
+            "I can easily say that Cominfo has been one of the most professional and knowledgeable IT companies I have
+            done business with."
+          </blockquote>
+          <div class="testi-detail">
+            <img src="images/logos/testi_logo3.png" alt="Mark Garcia - McAllen Foreign Trade Zone"
+              class="testimonial-image" loading="lazy" />
+            <div class="testi-role-name">
+              <h3 class="testimonial-name">Mark Garcia</h3>
+              <span class="testimonial-role">McAllen Foreign Trade Zone</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonial Section Ends -->
+
     <!-- Barber Pitch Section -->
     <section class="barber-boost-section">
         <div class="container">
@@ -280,13 +408,13 @@
     <section class="section-pricing-plans">
         <div class="container">
             <h2 class="secondry-heading">Choose the Right Plan for You</h2>
-            <p class="default-text">Simple, transparent pricing designed to match your growth.</p>
+            <p class="default-text" data-aos-offset="80">Simple, transparent pricing designed to match your growth.</p>
 
             <div class="pricing-cards-grid">
                 <!-- Starter Plan -->
                 <div class="pricing-card">
                     <h3 class="plan-name">Starter</h3>
-                    <p class="plan-price">$0 <span>/month</span></p>
+                    <p class="plan-price" data-aos-offset="100">$0 <span>/month</span></p>
                     <ul class="plan-features">
                         <li><i class="fas fa-check-circle"></i> Manage up to 5 clients</li>
                         <li><i class="fas fa-check-circle"></i> Listed in CutzClub directory</li>
@@ -329,44 +457,63 @@
     </section>
 
     <!-- Footer section start -->
-<footer class="site-footer">
-    <div class="container">
-  <div class="footer-content">
-    <div class="footer-brand">
-      <h3>CutzClub</h3>
-      <p>Barbers. Clients. Connected.</p>
-    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>CutzClub</h3>
+                    <p>Barbers. Clients. Connected.</p>
+                </div>
 
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#">Find a Barber</a></li>
-        <li><a href="#">I'm a Barber</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">How it Works</a></li>
-      </ul>
-    </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Find a Barber</a></li>
+                        <li><a href="#">I'm a Barber</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">How it Works</a></li>
+                    </ul>
+                </div>
 
-    <div class="footer-contact">
-      <h4>Contact</h4>
-      <p>Email: <a href="mailto:support@cutzclub.com">support@cutzclub.com</a></p>
-      <p>Follow us:</p>
-      <div class="social-icons">
-        <a href="#"><img src="./assets/icons/facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="./assets//icons/insta.png" alt="Instagram"></a>
-        <a href="#"><img src="./assets/icons/twitter.png" alt="Twitter"></a>
-      </div>
-    </div>
-  </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:support@cutzclub.com">support@cutzclub.com</a></p>
+                    <p>Follow us:</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="./assets/icons/facebookk.png" alt="Facebook"></a>
+                        <a href="#"><img src="./assets//icons/insta.png" alt="Instagram"></a>
+                        <a href="#"><img src="./assets/icons/twitter.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 CutzClub. All rights reserved.</p>
-  </div>
-  </div>
-</footer>
-    <!-- link script here -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/custom.js"></script>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CutzClub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<!-- ========== SCRIPTS ========== -->
+<!-- Load jQuery First -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+
+<!-- Slick Carousel -->
+<script type="text/javascript" src="js/slick.min.js"></script>
+
+<!-- AOS (Animate on Scroll) -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- Your Custom Scripts -->
+<script src="js/custom.js"></script>
+
+</body>
 </body>
 
 </html>
