@@ -691,14 +691,14 @@ h1 span {
     left: 0;
     right: 0;
     width: 100%;
-    background: #f0521b;
+    background: #462a00;
 }
 .testimonials-section .slick-slide:nth-child(even) .testimonial-card:before {
-    background: #1a2d4b;
+    background: #cc7a00;
 }
 .testimonial-card i {
     font-size: 2rem;
-    color: #ff6f61; /* Accent color for the quote icon */
+    color: #cc7a00; /* Accent color for the quote icon */
     margin-bottom: 10px;
 }
 .testimonial-review {
@@ -728,7 +728,8 @@ h1 span {
 .testimonial-name {
     font-size: 1.2rem !important;
     font-weight: bold;
-    color: #002746;
+    color: #462a00;
+  font-family: "Roboto Slab", serif;
 }
 .testi-center{
   text-align: center;
@@ -737,10 +738,13 @@ h1 span {
 
 .testimonial-role {
     font-size: 0.9rem;
-    color: #002746;
+    color: #cc7a00;
 }
 .testimonials-section .slick-dots {
-    bottom: -45px;
+    bottom: 20px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
 }
 .testimonials-section .slick-dots li.slick-active {
     width: 100px;
@@ -748,7 +752,7 @@ h1 span {
     transition: all 0.5s ease-in-out;
 }
 .testimonials-section .slick-dots li {
-    background: #ff6f61;
+    background: #cc7a00;
     height: 5px;
     width: 20px;
     transition: all 0.5s ease-in-out;
@@ -792,7 +796,7 @@ h1 span {
 }
 
 .page_responsive::-webkit-scrollbar-thumb {
-    background: #1a2d4b;
+    background: #cc7a00;
     cursor: pointer;
 }
 
