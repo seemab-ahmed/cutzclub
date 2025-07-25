@@ -15,22 +15,18 @@
     <!-- animention link -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-     <!-- Slick Carousel (used for carousels or sliders) -->
-  <link rel="stylesheet" href="css/slick.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Slick Carousel (used for carousels or sliders) -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-  <!-- Link Main Stylesheet (Your custom CSS) -->
-  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <!-- Link Main Stylesheet (Your custom CSS) -->
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
 
-  <!-- Bootstrap (latest stable version) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap (latest stable version) -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
 
 </head>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
 
 <body>
     <!-- header starts here  -->
@@ -57,33 +53,38 @@
 
         </div>
     </header>
-    <!-- Hero section starts here  -->
+    <!-- Hero section starts here -->
     <section class="banner">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="/assets/videos/hero-bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- ✅ Must be inside .banner -->
+        <div class="video-overlay"></div>
+
         <div class="container">
             <div class="banner-left">
                 <h1 class="banner-h1">
                     Fresh Cuts on Your Schedule. <span>One Membership at a Time</span>
                 </h1>
                 <p class="banner-detail">
-                    Say goodbye to last-minute bookings and inconsistent cuts. With our all-in-one platform, finding
-                    your go-to barber has never been easier. Explore top-rated barbers near you, choose a membership
-                    plan that fits your lifestyle, and secure your spot with just a few clicks. Whether you're keeping
-                    it sharp every week or every month — your fresh cut is just a tap away.
+                    Say goodbye to last-minute bookings and uneven cuts. With CutzClub, finding your trusted barber is simple. Pick a plan, browse top-rated barbers, and book in seconds — weekly or monthly, your next cut is just a tap away.
                 </p>
                 <div class="btn-grp">
                     <a href="#" class="secondry-btn">FIND A BARBER</a>
                     <a href="#" class="primary-btn">I'M A BARBER</a>
                 </div>
-
             </div>
         </div>
     </section>
+
     <!-- how-it-works section here  -->
     <section class="how-it-works-wrapper">
         <!-- Intro Section -->
         <div class="how-it-works-intro container">
             <div class="intro-text">
-                <span class="pre-header">Since 2006</span>
+                <img src="assets/icons/mustache.svg" alt="mustache" class="mustache">
                 <h2 class="secondry-heading">CutzClub Barber Shop</h2>
                 <p class="default-text intro-paragraph">
                     Come experience a unique and edgy barbershop for all your hair and beard needs.
@@ -101,20 +102,21 @@
                 </ul>
             </div>
             <div class="intro-images">
-                <img data-aos="fade-down" data-aos-duration="800" data-aos-delay="400" src="assets/images/banner.webp" alt="Barber cutting hair" class="intro-image main-image">
-                <img data-aos="fade-down" data-aos-duration="800" data-aos-delay="400" src="assets/images/banner.webp" alt="Barber with trimmer" class="intro-image sub-image">
+                <img data-aos="fade-down" data-aos-duration="800" data-aos-delay="400" src="assets/images/htw-top1.png"
+                    alt="Barber cutting hair" class="intro-image main-image">
+                <img data-aos="fade-down" data-aos-duration="800" data-aos-delay="400" src="assets/images/htw-top2.jpg"
+                    alt="Barber with trimmer" class="intro-image sub-image">
             </div>
         </div>
 
         <!-- How It Works Steps -->
-
     </section>
     <section class="how-it-works-steps">
         <div class=" container">
             <h2 class="secondry-heading" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000"
-                    data-aos-easing="ease-in-out">How It Works</h2>
+                data-aos-easing="ease-in-out">How It Works</h2>
             <div class="step-cards" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000"
-                    data-aos-easing="ease-in-out">
+                data-aos-easing="ease-in-out">
                 <div class="step-card">
                     <img src="assets/icons/hairdress.png" alt="Find Your Barber" class="step-icon">
                     <h3 class="step-title">Find Your Barber</h3>
@@ -122,6 +124,7 @@
                         Browse our directory of highly rated barbers near you. Check profiles, photos, ratings, and
                         services.
                     </p>
+                    <img src="assets/icons/hairdress.png" alt="Find Your Barber" class="step-icon-bg">
                 </div>
                 <div class="step-card">
                     <img src="assets/icons/checklist.png" alt="Pick Your Plan" class="step-icon sm">
@@ -129,6 +132,7 @@
                     <p class="step-description">
                         Choose a flexible membership (1-4 cuts/month). Lock in savings and secure consistent cuts.
                     </p>
+                    <img src="assets/icons/checklist.png" alt="Pick Your Plan" class="step-icon-bg">
                 </div>
                 <div class="step-card">
                     <img src="assets/icons/appointment.png" alt="Book and Show Up" class="step-icon sm">
@@ -136,6 +140,7 @@
                     <p class="step-description">
                         Schedule in seconds. No DMs, no waiting. Just show up and stay fresh.
                     </p>
+                    <img src="assets/icons/appointment.png" alt="Book and Show Up" class="step-icon-bg">
                 </div>
             </div>
         </div>
@@ -155,38 +160,42 @@
 
                 <ul class="why-membership-list">
                     <li class="wm-item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700"
-                    data-aos-easing="ease-in-out" data-aos-offset="150">
-                        <img src="./assets/icons/checklist.png" alt="Appointments" class="membership-icon">
+                        data-aos-easing="ease-in-out" data-aos-offset="150">
+                        <img src="./assets/icons/barber-appointment.png" alt="Appointments" class="membership-icon">
                         <span>Streamlined Appointments</span>
                     </li>
-                    <li class="wm-item" class="wm-item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700"
-                    data-aos-easing="ease-in-out" data-aos-offset="150">
-                        <img src="./assets/icons/hairdress.png" alt="Promotion" class="membership-icon">
+                    <li class="wm-item" class="wm-item" data-aos="fade-left" data-aos-delay="400"
+                        data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-offset="150">
+                        <img src="./assets/icons/promotion.png" alt="Promotion" class="membership-icon">
                         <span>Free Client Promotion</span>
                     </li>
-                    <li class="wm-item" class="wm-item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700"
-                    data-aos-easing="ease-in-out" data-aos-offset="150">
-                        <img src="./assets/icons/hairdress.png" alt="Reviews" class="membership-icon">
+                    <li class="wm-item" class="wm-item" data-aos="fade-left" data-aos-delay="400"
+                        data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-offset="150">
+                        <img src="./assets/icons/review.png" alt="Reviews" class="membership-icon">
                         <span>Get Rated & Reviewed</span>
                     </li>
-                    <li class="wm-item" class="wm-item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700"
-                    data-aos-easing="ease-in-out" data-aos-offset="150">
-                        <img src="./assets/icons/checklist.png" alt="Earnings" class="membership-icon">
+                    <li class="wm-item" class="wm-item" data-aos="fade-left" data-aos-delay="400"
+                        data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-offset="150">
+                        <img src="./assets/icons/banknote.png" alt="Earnings" class="membership-icon">
                         <span>Keep More of Your Earnings</span>
                     </li>
-                    <li class="wm-item" class="wm-item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700"
-                    data-aos-easing="ease-in-out" data-aos-offset="150">
-                        <img src="./assets/icons/checklist.png" alt="Analytics" class="membership-icon">
+                    <li class="wm-item" class="wm-item" data-aos="fade-left" data-aos-delay="400"
+                        data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-offset="150">
+                        <img src="./assets/icons/generate.png" alt="Analytics" class="membership-icon">
                         <span>Track Growth & Performance</span>
                     </li>
-                    <li class="wm-item" class="wm-item" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700"
-                    data-aos-easing="ease-in-out" data-aos-offset="150">
-                        <img src="./assets/icons/appointment.png" alt="Reminders" class="membership-icon">
+                    <li class="wm-item" class="wm-item" data-aos="fade-left" data-aos-delay="400"
+                        data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-offset="150">
+                        <img src="./assets/icons/bell.png" alt="Reminders" class="membership-icon">
                         <span>SMS & Email Reminders</span>
                     </li>
                 </ul>
+                <img src="assets/images/man-cutout.webp" alt="satisfied-handsome-man-thumb-up-hold-scissors" class="mw-cutout">
+                
             </div>
         </div>
+        <img src="assets/images/cutting-machine.svg" alt="machine" class="mw-machine">
+        <img src="assets/images/blade.svg" alt="machine" class="mw-blade">
     </section>
 
     <!-- barber profile section start -->
@@ -199,7 +208,7 @@
             <div class="barber-card-grid">
 
                 <div class="barber-card">
-                    <img src="./assets/images/james.png" alt="James Carter">
+                    <img src="./assets/images/b1.jpg" alt="James Carter">
                     <div class="barber-info">
                         <h3>James Carter</h3>
                         <p class="rating">
@@ -212,12 +221,21 @@
                         </p>
                         <p class="location"><i class="fa-solid fa-location-dot"></i> Brooklyn, NY</p>
                         <p class="specialty">Expert in skin fades and detailed beard grooming with a modern touch.</p>
+                        <div class="team-socials">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
                         <a href="#" class="view-profile-btn">View Profile</a>
+                    </div>
+                    <div class="barber-name">
+                        <h4>James Carter</h4>
                     </div>
                 </div>
 
                 <div class="barber-card">
-                    <img src="./assets/images/vanessa.png" alt="Vanessa Lopez">
+                    <img src="./assets/images/b2.jpg" alt="Vanessa Lopez">
                     <div class="barber-info">
                         <h3>Vanessa Lopez</h3>
                         <p class="rating">
@@ -230,12 +248,21 @@
                         </p>
                         <p class="location"><i class="fa-solid fa-location-dot"></i> Miami, FL</p>
                         <p class="specialty">Specialist in women's cuts, natural styling, and loc maintenance.</p>
+                        <div class="team-socials">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
                         <a href="#" class="view-profile-btn">View Profile</a>
+                    </div>
+                    <div class="barber-name">
+                        <h4>Vanessa Lopez</h4>
                     </div>
                 </div>
 
                 <div class="barber-card">
-                    <img src="./assets/images/tyrone.png" alt="Tyrone Mitchell">
+                    <img src="./assets/images/b3.jpg" alt="Tyrone Mitchell">
                     <div class="barber-info">
                         <h3>Tyrone Mitchell</h3>
                         <p class="rating">
@@ -248,114 +275,22 @@
                         </p>
                         <p class="location"><i class="fa-solid fa-location-dot"></i> Dallas, TX</p>
                         <p class="specialty">Known for sharp linings, classic cuts, and fast turnarounds.</p>
+                        <div class="team-socials">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
                         <a href="#" class="view-profile-btn">View Profile</a>
+                    </div>
+                    <div class="barber-name">
+                        <h4>Tyrone Mitchell</h4>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
-
-     <!-- Testimonial Section Starts -->
-  <section class="testimonials-section">
-    <div class="container">
-       <h2 class="secondry-heading testi-center">What Our Clients Say</h2>
-      <div class="testimonials-slider">
-        <div class="testimonial-card">
-          <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
-          <blockquote class="testimonial-review">
-            "CutzClub delivered ahead of schedule and under budget a full-service solution for our project's
-            manufacturing data collection and retrieval needs."
-          </blockquote>
-          <div class="testi-detail">
-            <img src="assets//images/client_1.png" alt="Bryan Buchanan - 3M Company" class="testimonial-image"
-              loading="lazy" />
-            <div class="testi-role-name">
-              <h3 class="testimonial-name">Bryan Buchanan</h3>
-              <span class="testimonial-role">3M Company</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
-          <blockquote class="testimonial-review">
-            "CutzClub delivered ahead of schedule and under budget a full-service solution for our project's
-            manufacturing data collection and retrieval needs."
-          </blockquote>
-          <div class="testi-detail">
-            <img src="assets/images/client2.png" alt="Bryan Buchanan - 3M Company" class="testimonial-image"
-              loading="lazy" />
-            <div class="testi-role-name">
-              <h3 class="testimonial-name">Bryan Buchanan</h3>
-              <span class="testimonial-role">3M Company</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
-          <blockquote class="testimonial-review">
-            "CutzClub delivered ahead of schedule and under budget a full-service solution for our project's
-            manufacturing data collection and retrieval needs."
-          </blockquote>
-          <div class="testi-detail">
-            <img src="assets/images/client3.jpg" alt="Bryan Buchanan - 3M Company" class="testimonial-image"
-              loading="lazy" />
-            <div class="testi-role-name">
-              <h3 class="testimonial-name">Bryan Buchanan</h3>
-              <span class="testimonial-role">3M Company</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
-          <blockquote class="testimonial-review">
-            "CutzClub delivered ahead of schedule and under budget a full-service solution for our project's
-            manufacturing data collection and retrieval needs."
-          </blockquote>
-          <div class="testi-detail">
-            <img src="images/logos/testi_logo1.jpg" alt="Bryan Buchanan - 3M Company" class="testimonial-image"
-              loading="lazy" />
-            <div class="testi-role-name">
-              <h3 class="testimonial-name">Bryan Buchanan</h3>
-              <span class="testimonial-role">3M Company</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
-          <blockquote class="testimonial-review">
-            "After using CutzClub's services for only a few months now, I feel that the quality of service is truly
-            outstanding and indeed beyond our expectations."
-          </blockquote>
-          <div class="testi-detail">
-            <img src="images/logos/testi_logo2.jpg" alt="Lt. John Vilano - U.S. Army" class="testimonial-image"
-              loading="lazy" />
-            <div class="testi-role-name">
-              <h3 class="testimonial-name">Lt. John Vilano</h3>
-              <span class="testimonial-role">U.S. Army</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
-          <blockquote class="testimonial-review">
-            "I can easily say that CutzClub has been one of the most professional and knowledgeable IT companies I have
-            done business with."
-          </blockquote>
-          <div class="testi-detail">
-            <img src="images/logos/testi_logo3.png" alt="Mark Garcia - McAllen Foreign Trade Zone"
-              class="testimonial-image" loading="lazy" />
-            <div class="testi-role-name">
-              <h3 class="testimonial-name">Mark Garcia</h3>
-              <span class="testimonial-role">McAllen Foreign Trade Zone</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Testimonial Section Ends -->
-
     <!-- Barber Pitch Section -->
     <section class="barber-boost-section">
         <div class="container">
@@ -401,9 +336,111 @@
                 <a href="#join" class="primary-btn">Join CutzClub Today</a>
             </div>
         </div>
+        <img src="assets/images/sezor.svg" alt="sezor" class="sezor-img">
+        <img src="assets/images/safety.svg" alt="safety" class="safety-img">
+
     </section>
-
-
+    <!-- Testimonial Section Starts -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="secondry-heading testi-center">What Our Clients Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
+                    <blockquote class="testimonial-review">
+                        "CutzClub delivered ahead of schedule and under budget a full-service solution for our project's
+                        manufacturing data collection and retrieval needs."
+                    </blockquote>
+                    <div class="testi-detail">
+                        <img src="assets//images/client_1.png" alt="Bryan Buchanan - 3M Company"
+                            class="testimonial-image" loading="lazy" />
+                        <div class="testi-role-name">
+                            <h3 class="testimonial-name">Bryan Buchanan</h3>
+                            <span class="testimonial-role">3M Company</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
+                    <blockquote class="testimonial-review">
+                        "CutzClub delivered ahead of schedule and under budget a full-service solution for our project's
+                        manufacturing data collection and retrieval needs."
+                    </blockquote>
+                    <div class="testi-detail">
+                        <img src="assets/images/client2.png" alt="Bryan Buchanan - 3M Company" class="testimonial-image"
+                            loading="lazy" />
+                        <div class="testi-role-name">
+                            <h3 class="testimonial-name">Bryan Buchanan</h3>
+                            <span class="testimonial-role">3M Company</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
+                    <blockquote class="testimonial-review">
+                        "CutzClub delivered ahead of schedule and under budget a full-service solution for our project's
+                        manufacturing data collection and retrieval needs."
+                    </blockquote>
+                    <div class="testi-detail">
+                        <img src="assets/images/client3.jpg" alt="Bryan Buchanan - 3M Company" class="testimonial-image"
+                            loading="lazy" />
+                        <div class="testi-role-name">
+                            <h3 class="testimonial-name">Bryan Buchanan</h3>
+                            <span class="testimonial-role">3M Company</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
+                    <blockquote class="testimonial-review">
+                        "CutzClub delivered ahead of schedule and under budget a full-service solution for our project's
+                        manufacturing data collection and retrieval needs."
+                    </blockquote>
+                    <div class="testi-detail">
+                        <img src="images/logos/testi_logo1.jpg" alt="Bryan Buchanan - 3M Company"
+                            class="testimonial-image" loading="lazy" />
+                        <div class="testi-role-name">
+                            <h3 class="testimonial-name">Bryan Buchanan</h3>
+                            <span class="testimonial-role">3M Company</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
+                    <blockquote class="testimonial-review">
+                        "After using CutzClub's services for only a few months now, I feel that the quality of service
+                        is truly
+                        outstanding and indeed beyond our expectations."
+                    </blockquote>
+                    <div class="testi-detail">
+                        <img src="images/logos/testi_logo2.jpg" alt="Lt. John Vilano - U.S. Army"
+                            class="testimonial-image" loading="lazy" />
+                        <div class="testi-role-name">
+                            <h3 class="testimonial-name">Lt. John Vilano</h3>
+                            <span class="testimonial-role">U.S. Army</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fa fa-quote-left testimonial-quote-icon" aria-hidden="true"></i>
+                    <blockquote class="testimonial-review">
+                        "I can easily say that CutzClub has been one of the most professional and knowledgeable IT
+                        companies I have
+                        done business with."
+                    </blockquote>
+                    <div class="testi-detail">
+                        <img src="images/logos/testi_logo3.png" alt="Mark Garcia - McAllen Foreign Trade Zone"
+                            class="testimonial-image" loading="lazy" />
+                        <div class="testi-role-name">
+                            <h3 class="testimonial-name">Mark Garcia</h3>
+                            <span class="testimonial-role">McAllen Foreign Trade Zone</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section Ends -->
     <!-- Pricing Plans Section -->
     <section class="section-pricing-plans">
         <div class="container">
@@ -457,61 +494,76 @@
     </section>
 
     <!-- Footer section start -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>CutzClub</h3>
-                    <p>Barbers. Clients. Connected.</p>
-                </div>
-
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#">Find a Barber</a></li>
-                        <li><a href="#">I'm a Barber</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">How it Works</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <p>Email: <a href="mailto:support@cutzclub.com">support@cutzclub.com</a></p>
-                    <p>Follow us:</p>
-                    <div class="social-icons">
-                        <a href="#"><img src="./assets/icons/facebookk.png" alt="Facebook"></a>
-                        <a href="#"><img src="./assets//icons/insta.png" alt="Instagram"></a>
-                        <a href="#"><img src="./assets/icons/twitter.png" alt="Twitter"></a>
-                    </div>
+    <footer class="footer">
+        <div class="footer-container container ">
+            <!-- Left Section -->
+            <div class="footer-section">
+                <img class="footer-logo" src="/assets/images//cutzclub.webp" alt="">
+                <p>
+                    <strong class="footer-desi">Barbers. Clients. Connected.</strong> <br />
+                    Discover top barbers near you, book appointments easily, and enjoy a seamless grooming experience.
+                    Whether you're a pro barber or just need a great cut — CutzClub connects you instantly.
+                </p>
+                <div class="subscribe">
+                    <input type="email" placeholder="Enter Your Email address" />
+                    <button>&#10148;</button>
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2025 CutzClub. All rights reserved.</p>
+            <!-- Middle Section -->
+            <div class="footer-section">
+                <h3>USEFUL LINKS</h3>
+                <ul>
+                    <li><a href="#">> Home</a></li>
+                    <li><a href="#">> About</a></li>
+                    <li><a href="#">> Find a Barber</a></li>
+                    <li><a href="#">> I'm a Barber</a></li>
+                    <li><a href="#">> Pricing</a></li>
+                    <li><a href="#">> How it work</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Right Section -->
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><strong>Phone:</strong> +030212345678</p>
+                <p><strong>Fax:</strong> +030212345678</p>
+                <p><strong>Email:</strong>support@cutzclub.com</p>
+                <!-- <p>1394 Argonne Street, New Castle, USA</p> -->
+                <p>Follow us:</p>
+                <div class="social-icons">
+                    <a href="#"><img src="./assets/icons/facebookk.png" alt="Facebook"></a>
+                    <a href="#"><img src="./assets//icons/insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="./assets/icons/twitter.png" alt="Twitter"></a>
+                </div>
             </div>
         </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 CutzClub. All rights reserved.</a></p>
+        </div>
     </footer>
-<!-- ========== SCRIPTS ========== -->
-<!-- Load jQuery First -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- ========== SCRIPTS ========== -->
+    <!-- Load jQuery First -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- Bootstrap Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-  crossorigin="anonymous"></script>
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
-<!-- Slick Carousel -->
-<script type="text/javascript" src="js/slick.min.js"></script>
+    <!-- Slick Carousel -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
 
-<!-- AOS (Animate on Scroll) -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    <!-- AOS (Animate on Scroll) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
-<!-- Your Custom Scripts -->
-<script src="js/custom.js"></script>
+    <!-- Your Custom Scripts -->
+    <script src="js/custom.js"></script>
 
 </body>
 </body>
