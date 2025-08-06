@@ -271,7 +271,7 @@ h1 span {
 .btn-grp {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 .btn-grp a {
@@ -377,7 +377,7 @@ h1 span {
   max-width: 416px;
   justify-content: center;
   align-items: center;
-  height: 465px;
+  height: 491px;
   background: #9d9a9ac7;
   padding: 45px 12px;
   border-radius: 40px;
@@ -795,7 +795,30 @@ h1 span {
   }
 }
 
-/* Pricing Plans Section */
+/* Pricing Plans Section */  
+.elite-highlight {
+        border: 2px solid #f5c542;
+        box-shadow: 0 0 20px rgba(255, 215, 0, 1.6);
+        position: relative;
+        transform: scale(1.05);
+        z-index: 2;
+    }
+     .badge {
+        background: #f5c542;
+        color: black;
+        margin-top: 12px;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 12px 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .plan-commission {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #444;
+    }
+
+
 .section-pricing-plans {
   background: #fefefe;
   padding: 130px 20px;
@@ -821,13 +844,13 @@ h1 span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 95px;
+  gap: 50px;
 }
 .pricing-card {
   background: #e0e0e0;
   border-radius: 30px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-  width: 300px;
+  width: 390px;
   padding: 30px 5px 30px 8px;
   transition: all 0.3s ease;
   text-align: center;
@@ -852,7 +875,7 @@ h1 span {
   font-weight: bold;
   color: #222;
   margin-top: 37px;
-  margin-bottom: 23px;
+  margin-bottom: 16px;
   font-family: "Josefin Sans", sans-serif;
 }
 .plan-price span {
@@ -869,6 +892,7 @@ h1 span {
 .plan-features li {
   font-size: 18px;
   color: #000000;
+  line-height: 166%;
   display: flex;
   align-items: start;
   gap: 6px;
@@ -1085,7 +1109,8 @@ h1 span {
 .footer-section p {
   font-size: 14px;
   color: #ccc;
-  margin-bottom: 20px;
+  margin: 10px;
+  line-height: 140%;
 }
 
 .subscribe {
