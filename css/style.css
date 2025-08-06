@@ -78,6 +78,11 @@ h1 {
   color: #000;
   border: 1px solid transparent;
 }
+.nav-btn {
+  width: 180px;
+  text-align: center;
+  border: none;
+}
 .secondry-btn:hover,
 .primary-btn:hover {
   background: linear-gradient(to left, transparent 50%, #cc7a00 50%);
@@ -369,7 +374,7 @@ h1 span {
   max-width: 416px;
   justify-content: center;
   align-items: center;
-  height: 491px;
+  height: 410px;
   background: #9d9a9ac7;
   padding: 45px 12px;
   border-radius: 40px;
@@ -438,7 +443,7 @@ h1 span {
 }
 .main-box {
   display: flex;
-  gap: 126px;
+  gap: 90px;
 }
 .main-box .membership-dosktop {
   color: #000000;
@@ -468,9 +473,9 @@ h1 span {
 }
 
 .mw-cutout {
-  width: 336px;
-  height: 504px;
-  border-radius: 25px;
+  width: 395px;
+    height: 608px;
+  border-radius: 20px;
   margin-top: 28px;
 }
 .why-membership-description {
@@ -487,17 +492,23 @@ h1 span {
 }
 .wm-item {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: start;
   gap: 20px;
   background: #d9d9d9;
-  padding: 10px 45px;
-  border-radius: 20px;
+  padding: 16px 6px 16px 28px ;
+  border-radius: 14px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .wm-item span {
   font-size: 32px;
   font-weight: 700;
+  color: #000000;
+}
+.wm-item p{
+  font-size: 20px;
+  font-weight: 500;
   color: #000000;
 }
 .why-membership-item:hover {
@@ -785,6 +796,20 @@ h1 span {
   .boost-item div {
     text-align: center;
   }
+  /* how it work */
+  .wm-item span {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 400;
+}
+.wm-item p{
+  font-size: 16px;
+  font-weight: 400;
+}
+    .main-box p {
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
 
 /* Pricing Plans Section */  
@@ -809,7 +834,17 @@ h1 span {
         margin-bottom: 10px;
         color: #444;
     }
-
+.plan-features span {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px 6px 0 23px;
+}
+.plan-features div {
+  color: #000000;
+  font-size: 18px;
+  padding: 3px 0;
+}
 
 .section-pricing-plans {
   background: #fefefe;
