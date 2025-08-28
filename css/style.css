@@ -31,7 +31,8 @@ img {
 }
 .container {
   width: 100%;
-  max-width: 1371px;
+  max-width: 1410px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 .pre-header {
@@ -1619,6 +1620,7 @@ h1 span {
     right: 0;
     transition: all 0.5s;
   }
+  .btn-grp,
   .header .primary-btn {
     display: none;
   }

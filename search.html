@@ -5,95 +5,216 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CutzClub — Find a Pro</title>
   <link rel="stylesheet" href="css/search.css" />
+  <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body style="background-color: black;">
+  <!-- header starts here  -->
+    <header class="header">
+        <div class="container">
+            <!-- <a class="logo" href="./index.html"><img src="./assets/images//cutzclub.webp" alt="CutzClub" /></a> -->
+            <div>
+                <a href="./index.html" class="logo instrument-sans-bold">CUTZCLUB</a>
+            </div>
+            <div class="toggle-btn"></div>
+            <nav>
+                <!-- Fix the spacing of the navbar -->
+                <ul class="josefin-sans-semiblod">
+                    <li><a href="./index.html" class="nav-link-item josefin-sans-semiblod">Find a Barber/Stylist</a></li>
+                    <li><a href="./index.html" class="nav-link-item">For Barbers & Stylist</a></li>
+                    <li><a href="#membership" class="nav-link-item josefin-sans-semiblod">Membership</a></li>
+                    <li><a href="#how-it-work" class="nav-link-item">How It Work</a></li>
+                </ul>
+            </nav>
+            <div class="btn-grp">
+                <a href="login.html" class="nav-btn secondry-btn sm-hidden">Login</a>
+                <a href="signup.html" class="nav-btn primary-btn sm-hidden">Join Now</a>
+            </div>
 
+        </div>
+    </header>
   <!-- Search / Filter Bar -->
   <section class="cc-searchbar" role="search">
-    <form class="cc-searchbar__form" action="#" method="get" aria-label="Find a pro">
-      
-      <!-- Dropdown -->
-      <label class="sr-only" for="serviceSelect">All Services</label>
-      <div class="cc-select">
-        <select id="serviceSelect" name="service" aria-label="Filter by service">
-          <option value="all" selected>All Services</option>
-          <option value="barber">Barbers</option>
-          <option value="stylist">Stylists</option>
-          <option value="loctician">Locticians</option>
-        </select>
-        <span class="cc-select__icon" aria-hidden="true">▾</span>
-      </div>
+    <div class="container">
+      <h2 class="cc-main-heading">Search for Barbers, Stylish, or Locticians</h2>
+        <form class="cc-searchbar__form" action="#" method="get" aria-label="Find a pro">
+        
+        <!-- Dropdown -->
+        <label class="sr-only" for="serviceSelect">All Services</label>
+        <div class="cc-select">
+          <select id="serviceSelect" name="service" aria-label="Filter by service">
+            <option value="all" selected>All Services</option>
+            <option value="barber">Barbers</option>
+            <option value="stylist">Stylists</option>
+            <option value="loctician">Locticians</option>
+          </select>
+          <span class="cc-select__icon" aria-hidden="true">▾</span>
+        </div>
 
-      <!-- Search input -->
-      <label class="sr-only" for="q">Search by name, city, or style</label>
-      <input
-        id="q"
-        class="cc-searchbar__input"
-        type="search"
-        name="q"
-        placeholder="Search by name, city, or style"
-        autocomplete="off"
-      />
+        <!-- Search input -->
+        <label class="sr-only" for="q">Search by name, city, or style</label>
+        <input
+          id="q"
+          class="cc-searchbar__input"
+          type="search"
+          name="q"
+          placeholder="Search by name, city, or style"
+          autocomplete="off"
+        />
 
-      <!-- Submit -->
-      <button class="cc-btn cc-btn--gold" type="submit">Search</button>
-    </form>
+        <!-- Submit -->
+        <button class="cc-btn cc-btn--gold" type="submit">Search</button>
+      </form>
+    </div>
   </section>
 
   <!-- Results List -->
-  <ul class="cc-results">
+   <section class="result-section">
+    <div class="container">
+       <ul class="cc-results">
     <!-- Barber -->
     <li class="cc-card" data-type="barber">
-      <div class="cc-avatar" aria-hidden="true"></div>
-      <div class="cc-card__body">
+       <div class="cc-card__body">
         <div class="cc-card__top">
-          <h3 class="cc-name">Jacob W. <span class="cc-rating">(5.0)</span></h3>
+          <div class="cc-avatar" aria-hidden="true"></div>
+          <div class="cc-stars">
+             <h3 class="cc-name">Jacob W. <span class="cc-rating">(5.0)</span></h3>
+             <span>★ ★ ★ ★ ★ </span>
+          </div>
+         
+        </div>
+        <div class="cc-text">
+          <div>
+            <p class="cc-meta">Barber • Norfolk, VA</p>
+             <p class="cc-desc">Razor fade specialist w/ 10 yrs experience.</p>
+          </div>
           <button class="cc-btn cc-btn--outline">View Profile</button>
         </div>
-        <p class="cc-meta">Barber • Norfolk, VA</p>
-        <p class="cc-desc">Razor fade specialist w/ 10 yrs experience.</p>
+        
       </div>
     </li>
 
     <!-- Barber -->
     <li class="cc-card" data-type="barber">
-      <div class="cc-avatar" aria-hidden="true"></div>
       <div class="cc-card__body">
         <div class="cc-card__top">
-          <h3 class="cc-name">Jay the Barber <span class="cc-rating">(4.8)</span></h3>
+          <div class="cc-avatar" aria-hidden="true"></div>
+          <div class="cc-stars">
+             <h3 class="cc-name">Jay the Barber <span class="cc-rating">(4.8)</span></h3>
+             <span>★ ★ ★ ★ ★ </span>
+          </div>
+         
+        </div>
+        <div class="cc-text">
+          <div>
+            <p class="cc-meta">Barber • Atlanta, GA</p>
+             <p class="cc-desc">Clean fades, beard sculpting, premium finishes.</p>
+          </div>
           <button class="cc-btn cc-btn--outline">View Profile</button>
         </div>
-        <p class="cc-meta">Barber • Atlanta, GA</p>
-        <p class="cc-desc">Clean fades, beard sculpting, premium finishes.</p>
+        
       </div>
     </li>
 
     <!-- Loctician -->
     <li class="cc-card" data-type="loctician">
-      <div class="cc-avatar" aria-hidden="true"></div>
-      <div class="cc-card__body">
+       <div class="cc-card__body">
         <div class="cc-card__top">
-          <h3 class="cc-name">James C. <span class="cc-rating">(4.7)</span></h3>
+          <div class="cc-avatar" aria-hidden="true"></div>
+          <div class="cc-stars">
+             <h3 class="cc-name">James C. <span class="cc-rating">(4.7)</span></h3>
+             <span>★ ★ ★ ★ ★ </span>
+          </div>
+         
+        </div>
+        <div class="cc-text">
+          <div>
+            <p class="cc-meta">Loctician • Charlotte, NC</p>
+             <p class="cc-desc">Starter locs, retwists, maintenance & care.</p>
+          </div>
           <button class="cc-btn cc-btn--outline">View Profile</button>
         </div>
-        <p class="cc-meta">Loctician • Charlotte, NC</p>
-        <p class="cc-desc">Starter locs, retwists, maintenance & care.</p>
+        
       </div>
     </li>
 
     <!-- Stylist -->
     <li class="cc-card" data-type="stylist">
-      <div class="cc-avatar" aria-hidden="true"></div>
       <div class="cc-card__body">
         <div class="cc-card__top">
-          <h3 class="cc-name">Omari O. <span class="cc-rating">(5.0)</span></h3>
+          <div class="cc-avatar" aria-hidden="true"></div>
+          <div class="cc-stars">
+             <h3 class="cc-name">Omari O. <span class="cc-rating">(5.0)</span></h3>
+             <span>★ ★ ★ ★ ★ </span>
+          </div>
+         
+        </div>
+        <div class="cc-text">
+          <div>
+            <p class="cc-meta">Hairstylist • Washington, DC</p>
+             <p class="cc-desc">Silk press, protective styles, color services.</p>
+          </div>
           <button class="cc-btn cc-btn--outline">View Profile</button>
         </div>
-        <p class="cc-meta">Hairstylist • Washington, DC</p>
-        <p class="cc-desc">Silk press, protective styles, color services.</p>
+        
       </div>
     </li>
   </ul>
+    </div>
+   </section>
+  <!-- Footer section start -->
+    <footer class="footer">
+        <div class="footer-container container ">
+            <!-- Left Section -->
+            <div class="footer-section">
+                <img class="footer-logo" src="./assets/images//cutzclub.webp" alt="">
+                <p class="instrument-sans">
+                    <strong class="footer-desi">pros. Clients. Connected.</strong> <br />
+                    Discover top pros near you, book appointments easily, and enjoy a seamless grooming
+                    experience.
+                    Whether you're a pro pros or just need a great cut — CutzClub connects you instantly.
+                </p>
+                <div class="subscribe">
+                    <input type="email" placeholder="Enter Your Email address" />
+                    <button>&#10148;</button>
+                </div>
+            </div>
 
+            <!-- Middle Section -->
+            <div class="footer-section instrument-sans">
+                <h3>USEFUL LINKS</h3>
+                <ul>
+                    <li><a href="#">> Home</a></li>
+                    <li><a href="#">> About</a></li>
+                    <li><a href="#">> Find a pros</a></li>
+                    <li><a href="#">> I'm a pros</a></li>
+                    <li><a href="#">> Pricing</a></li>
+                    <li><a href="#">> How it work</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Right Section -->
+            <div class="footer-section instrument-sans">
+                <h4>Contact</h4>
+                <p><strong>Phone:</strong> +030212345678</p>
+                <p><strong>Fax:</strong> +030212345678</p>
+                <p><strong>Email:</strong> support@cutzclub.com</p>
+                <!-- <p>1394 Argonne Street, New Castle, USA</p> -->
+                <p class="instrument-sans">Follow us:</p>
+                <div class="social-icons">
+                    <a href="#"><img src="./assets/icons/facebookk.png" alt="Facebook"></a>
+                    <a href="#"><img src="./assets//icons/insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="./assets/icons/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 CutzClub. All rights reserved.</a></p>
+        </div>
+    </footer>
+<!-- Your Custom Scripts -->
+    <script src="js/custom.js"></script>
 </body>
 </html>

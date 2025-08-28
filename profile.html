@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+   <link rel="stylesheet" href="css/profile.css" />
+   <link rel="stylesheet" href="fonts/fonts.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: black;">
+ <!-- header starts here  -->
+    <header class="header">
+        <div class="container">
+            <!-- <a class="logo" href="./index.html"><img src="./assets/images//cutzclub.webp" alt="CutzClub" /></a> -->
+            <div>
+                <a href="./index.html" class="logo instrument-sans-bold">CUTZCLUB</a>
+            </div>
+            <div class="toggle-btn"></div>
+            <nav>
+                <!-- Fix the spacing of the navbar -->
+                <ul class="josefin-sans-semiblod">
+                    <li><a href="./index.html" class="nav-link-item josefin-sans-semiblod">Find a Barber/Stylist</a></li>
+                    <li><a href="./index.html" class="nav-link-item">For Barbers & Stylist</a></li>
+                    <li><a href="#membership" class="nav-link-item josefin-sans-semiblod">Membership</a></li>
+                    <li><a href="#how-it-work" class="nav-link-item">How It Work</a></li>
+                </ul>
+            </nav>
+            <div class="btn-grp">
+                <a href="login.html" class="nav-btn secondry-btn sm-hidden">Login</a>
+                <a href="signup.html" class="nav-btn primary-btn sm-hidden">Join Now</a>
+            </div>
+
+        </div>
+    </header>
+   <section class="profile_header">
+      <div class="container">
+         <div class="profile-header">
+            <div class="profile-image"><img src="/assets/images/htw-top1.png" alt=""></div>
+            <div class="profile-info">
+                <h2 class="profile-name">Jacob W.</h2>
+                <button>Elite</button>
+                <div class="rating">
+                    <div class="stars">★★★★★</div>
+                    <div class="review-count">500</div>
+                </div>
+                <p class="location">Barber • Norfolk VA</p>
+                <p class="specialty">Razor fade specialist 10+ yrs experience.</p>
+                <p>45 m • Avg service time • $40-$55 Brice range Available </p>
+            </div>
+            <div class="profile-booking">
+              <a href="#">Book with</a>
+              <span>see services</span>
+            </div>
+        </div>
+      </div>
+   </section>
+ <!-- profile tabs section -->
+
+
+ <section class="profile-tabs">
+  <div class="container">
+     <div class="tab-head">
+      <div class="tabs">
+        <button class="tab active" data-tab="services">Services & Pricing</button>
+        <button class="tab" data-tab="about">About</button>
+        <button class="tab" data-tab="gallery">Gallery</button>
+        <button class="tab" data-tab="reviews">Reviews</button>
+      </div>
+     </div>
+
+  <div class="tab-content">
+        <!-- Services & Pricing -->
+        <div class="tab-panel active" id="services">
+          <div class="services-list">
+                <div class="service-item">
+                  <div class="service-info">
+                    <h3>Skin Fade</h3>
+                    <p>45 min · Clippers & shears · Hot towel finish</p>
+                  </div>
+                  <div class="service-price">
+                    <span>$45</span>
+                    <a href="#" class="book-btn">Book</a>
+                  </div>
+                </div>
+
+                <div class="service-item">
+                  <div class="service-info">
+                    <h3>Haircut + Beard</h3>
+                    <p>60 min · Line-up & beard sculpting</p>
+                  </div>
+                  <div class="service-price">
+                    <span>$65</span>
+                    <a href="#" class="book-btn">Book</a>
+                  </div>
+                </div>
+
+                <div class="service-item">
+                  <div class="service-info">
+                    <h3>Kids Cut</h3>
+                    <p>30 min · Age 12 and under</p>
+                  </div>
+                  <div class="service-price">
+                    <span>$30</span>
+                    <a href="#" class="book-btn">Book</a>
+                  </div>
+                </div>
+
+              </div>
+
+    </div>
+
+    <!-- About -->
+    <div class="tab-panel" id="about">
+      <div class="about-section">
+        <H2>About</H2>
+        <p>
+          I’ve been cutting for over a decade with a focus on precision fades and classic looks.
+          I’m Elite on CutzClub—remders & premium scalding.
+        </p>
+
+        <div class="tag-group">
+          <span class="tag">Fades</span>
+          <span class="tag">Beard work</span>
+          <span class="tag">Line-ups</span>
+          <span class="tag">Designs</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="tab-panel" id="gallery">
+      <div class="gallery-section">
+              <div class="map-placeholder">Map</div>
+              <p class="location-text">Downtown Norfolk, VA</p>
+              <ul class="social_icons">
+                <li><a href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
+                </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+                  </svg>
+
+                </a></li>
+                <li><a href="#">
+                  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z" clip-rule="evenodd"/>
+                  </svg>
+
+                </a></li>
+              </ul>
+              <div class="review-box">
+                  <div class="review-header">
+                    <strong>3.0 ★★★★★</strong>
+                    <span>128 reviews</span>
+                    <a href="#">Write a review</a>
+                  </div>
+
+                  <div class="single-review">
+                    <div class="review-top">
+                      <span class="reviewer">Marcus G.</span>
+                      <span class="review-date">Jan 9, 2025</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Sharpcut on time, and super professional. Booking again.</p>
+                  </div>
+
+                  <div class="single-review">
+                    <div class="review-top">
+                      <span class="reviewer">Alina P.</span>
+                      <span class="review-date">Dec 22, 2024</span>
+                    </div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-text">Loved the fade. Clean workspace and easy scheduling.</p>
+                  </div>
+                </div>
+
+            </div>
+    </div>
+
+    <!-- Reviews -->
+    <div class="tab-panel" id="reviews">
+      <div class="reviews-section">
+          <div class="review-images">
+            <img src="/assets/images/htw-top1.png" alt="">
+            <img src="/assets/images/htw-top1.png" alt="">
+            <img src="/assets/images/htw-top1.png" alt="">
+           <img src="/assets/images/htw-top1.png" alt="">
+          </div>
+          <div class="review-tags">
+            <span class="tag">Apriyl's cut +</span>
+            <span class="tag">trice rangs</span>
+          </div>
+          <div class="review-box">
+                  <div class="review-header">
+                    <strong>3.0 ★★★★★</strong>
+                    <span>128 reviews</span>
+                    <a href="#">Write a review</a>
+                  </div>
+
+                  <div class="single-review">
+                    <div class="review-top">
+                      <span class="reviewer">Marcus G.</span>
+                      <span class="review-date">Jan 9, 2025</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Sharpcut on time, and super professional. Booking again.</p>
+                  </div>
+
+                  <div class="single-review">
+                    <div class="review-top">
+                      <span class="reviewer">Alina P.</span>
+                      <span class="review-date">Dec 22, 2024</span>
+                    </div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-text">Loved the fade. Clean workspace and easy scheduling.</p>
+                  </div>
+                </div>
+        </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="profile_tabs-data">
+  <div class="container">
+    <div class="progile_row">
+      <div class="left_col">
+         <!-- About -->
+        <div class="tab_panel" id="about">
+          <div class="about-section">
+            <H2>About</H2>
+            <p>
+              I’ve been cutting for over a decade with a focus on precision fades and classic looks.
+              I’m Elite on CutzClub—remders & premium scalding.
+            </p>
+
+            <div class="tag-group">
+              <span class="tag">Fades</span>
+              <span class="tag">Beard work</span>
+              <span class="tag">Line-ups</span>
+              <span class="tag">Designs</span>
+            </div>
+          </div>
+        </div>
+          <!-- Reviews -->
+        <div class="tab_panel" id="reviews">
+          <div class="reviews-section">
+             <h2>Reviews</h2>
+              <div class="review-images">
+                <img src="/assets/images/htw-top1.png" alt="">
+                <img src="/assets/images/htw-top1.png" alt="">
+                <img src="/assets/images/htw-top1.png" alt="">
+                <img src="/assets/images/htw-top1.png" alt="">
+              </div>
+
+              <div class="review-tags">
+                <span class="tag">Apriyl's cut  +</span>
+                <span class="tag">trice rangs</span>
+              </div>
+
+            </div>
+
+        </div>
+        <!-- policies -->
+        <div class="policies">
+          <h2>Policies</h2>
+          <ul>
+            <li><span>.</span> <p>Late arrivals over 10 minutes-may be resccheduel ded.</p></li>
+            <li><span>.</span> <p>24-hour cancellation preferred.</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="right_col">
+        <!-- gallery -->
+         <h2 class="gallery">Gallery</h2>
+        <div class="tab_panel" id="gallery">
+            <div class="gallery-section">
+              <div class="map-placeholder">Map</div>
+              <p class="location-text">Downtown Norfolk, VA</p>
+              <ul class="social_icons">
+                <li><a href="#"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
+                </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+                  </svg>
+
+                </a></li>
+                <li><a href="#">
+                  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z" clip-rule="evenodd"/>
+                  </svg>
+
+                </a></li>
+              </ul>
+              <div class="review-box">
+                  <div class="review-header">
+                    <strong>3.0 ★★★★★</strong>
+                    <span>128 reviews</span>
+                    <a href="#">Write a review</a>
+                  </div>
+
+                  <div class="single-review">
+                    <div class="review-top">
+                      <span class="reviewer">Marcus G.</span>
+                      <span class="review-date">Jan 9, 2025</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Sharpcut on time, and super professional. Booking again.</p>
+                  </div>
+
+                  <div class="single-review">
+                    <div class="review-top">
+                      <span class="reviewer">Alina P.</span>
+                      <span class="review-date">Dec 22, 2024</span>
+                    </div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-text">Loved the fade. Clean workspace and easy scheduling.</p>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+     <!-- Footer section start -->
+    <footer class="footer">
+        <div class="footer-container container ">
+            <!-- Left Section -->
+            <div class="footer-section">
+                <img class="footer-logo" src="./assets/images//cutzclub.webp" alt="">
+                <p class="instrument-sans">
+                    <strong class="footer-desi">pros. Clients. Connected.</strong> <br />
+                    Discover top pros near you, book appointments easily, and enjoy a seamless grooming
+                    experience.
+                    Whether you're a pro pros or just need a great cut — CutzClub connects you instantly.
+                </p>
+                <div class="subscribe">
+                    <input type="email" placeholder="Enter Your Email address" />
+                    <button>&#10148;</button>
+                </div>
+            </div>
+
+            <!-- Middle Section -->
+            <div class="footer-section instrument-sans">
+                <h3>USEFUL LINKS</h3>
+                <ul>
+                    <li><a href="#">> Home</a></li>
+                    <li><a href="#">> About</a></li>
+                    <li><a href="#">> Find a pros</a></li>
+                    <li><a href="#">> I'm a pros</a></li>
+                    <li><a href="#">> Pricing</a></li>
+                    <li><a href="#">> How it work</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Right Section -->
+            <div class="footer-section instrument-sans">
+                <h4>Contact</h4>
+                <p><strong>Phone:</strong> +030212345678</p>
+                <p><strong>Fax:</strong> +030212345678</p>
+                <p><strong>Email:</strong> support@cutzclub.com</p>
+                <!-- <p>1394 Argonne Street, New Castle, USA</p> -->
+                <p class="instrument-sans">Follow us:</p>
+                <div class="social-icons">
+                    <a href="#"><img src="./assets/icons/facebookk.png" alt="Facebook"></a>
+                    <a href="#"><img src="./assets//icons/insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="./assets/icons/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 CutzClub. All rights reserved.</a></p>
+        </div>
+    </footer>
+<script>
+  const tabs = document.querySelectorAll(".tab");
+  const panels = document.querySelectorAll(".tab-panel");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active"));
+      panels.forEach(p => p.classList.remove("active"));
+
+      tab.classList.add("active");
+      document.getElementById(tab.dataset.tab).classList.add("active");
+    });
+  });
+</script>
+
+    <!-- Your Custom Scripts -->
+    <script src="js/custom.js"></script>
+</body>
+</html>
+
