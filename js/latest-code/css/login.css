@@ -1,0 +1,131 @@
+:root{
+  --bg:#171717;
+  --panel:#101010;
+  --text:#f5f5f5;
+  --muted:#cfcfcf;
+  --gold:#f0c041;
+  --gold-700:#d5a930;
+  --stroke:#2a2a2a;
+  --error:#ff6b6b;
+  --radius:16px;
+  --shadow:0 14px 40px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:"League Spartan",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  line-height:1.25;
+  letter-spacing:.2px;
+  display:grid;
+  place-items:center;
+  padding:24px;
+}
+.card{
+  width:100%;
+  max-width:420px;
+  background:var(--panel);
+  border:1px solid var(--stroke);
+  border-radius:24px;
+  box-shadow:var(--shadow);
+  padding:28px;
+}
+.brand{
+  text-align:center;
+  color:var(--gold);
+  font-weight:800;
+  font-size:36px;
+  letter-spacing:.6px;
+  margin:6px 0 18px;
+}
+.role-toggle{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin:10px 0 22px;
+}
+.toggle-btn{
+  appearance:none;
+  background:#1a1a1a;
+  color:var(--text);
+  border:1px solid var(--stroke);
+  border-radius:12px;
+  padding:12px 14px;
+  font-weight:800;
+  cursor:pointer;
+  transition:background .15s, border-color .15s, transform .05s;
+  text-align:center;
+}
+.toggle-btn:hover{border-color:#3a3a3a}
+.toggle-btn:active{transform:translateY(1px)}
+.toggle-btn[aria-pressed="true"]{
+  background:var(--gold);
+  color:#151515;
+  border-color:var(--gold-700);
+}
+.field{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#141414;
+  border:1px solid var(--stroke);
+  border-radius:12px;
+  padding:12px 14px;
+  margin:12px 0;
+}
+.field:focus-within{border-color:#3c3c3c}
+.field input{
+  background:transparent;
+  border:0;
+  outline:0;
+  color:var(--text);
+  font-size:16px;
+  width:100%;
+}
+.eye{
+  background:transparent;
+  border:0;
+  color:var(--muted);
+  cursor:pointer;
+  font-size:14px;
+}
+.helper{
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
+  margin:6px 0 14px;
+}
+.helper a{color:var(--gold); text-decoration:none}
+.helper a:hover{text-decoration:underline}
+.btn{
+  width:100%;
+  background:var(--gold);
+  color:#151515;
+  border:0;
+  border-radius:12px;
+  padding:14px 16px;
+  font-weight:800;
+  font-size:22px;
+  cursor:pointer;
+  transition:filter .15s, transform .05s, background .15s;
+}
+.btn:hover{filter:brightness(1.02)}
+.btn:active{transform:translateY(1px)}
+.btn:disabled{
+  background:#8e7a35;
+  cursor:not-allowed;
+  filter:none;
+}
+.error{
+  display:none;
+  color:var(--error);
+  font-size:14px;
+  margin-top:6px;
+  text-align:center;
+}
+@media (max-width:420px){
+  .brand{font-size:32px}
+  .btn{font-size:20px}
+}

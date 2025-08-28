@@ -1,0 +1,135 @@
+/* ---- CutzClub Search Bar ---- */
+:root{
+  --cc-bg:#0f0f10;           /* page background */
+  --cc-card:#161617;         /* card background */
+  --cc-text:#e9e9ea;
+  --cc-sub:#aaaaad;
+  --cc-gold:#F2C94C;         /* CutzClub gold */
+  --cc-gold-ink:#1a1a1a;
+  --cc-line:#2a2a2d;
+  --cc-radius:16px;
+  --cc-shadow:0 6px 24px rgba(0,0,0,.35);
+  --cc-focus:0 0 0 3px rgba(242,201,76,.35);
+}
+
+.sr-only{
+  position:absolute!important; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+
+.cc-searchbar{
+  background:transparent;
+  padding:12px 0 8px;
+}
+
+.cc-searchbar__form{
+  display:grid;
+  grid-template-columns: minmax(150px,210px) 1fr auto;
+  gap:12px;
+  align-items:center;
+}
+
+.cc-select{
+  position:relative;
+  background:var(--cc-card);
+  border:1px solid var(--cc-line);
+  border-radius:var(--cc-radius);
+  box-shadow:var(--cc-shadow);
+}
+
+.cc-select select{
+  appearance:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  background:transparent;
+  color:var(--cc-text);
+  font:600 15px/1.2 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  padding:14px 42px 14px 14px;
+  width:100%;
+  border:0;
+  border-radius:var(--cc-radius);
+  outline:none;
+}
+
+.cc-select__icon{
+  position:absolute;
+  right:12px;
+  top:50%;
+  transform:translateY(-50%);
+  pointer-events:none;
+  color:var(--cc-sub);
+  font-size:14px;
+}
+
+.cc-searchbar__input{
+  background:var(--cc-card);
+  color:var(--cc-text);
+  border:1px solid var(--cc-line);
+  border-radius:var(--cc-radius);
+  padding:14px 14px;
+  font:500 15px/1.2 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  box-shadow:var(--cc-shadow);
+  outline:none;
+}
+.cc-searchbar__input::placeholder{ color:var(--cc-sub); }
+.cc-searchbar__input:focus{ box-shadow:var(--cc-focus), var(--cc-shadow); }
+
+.cc-btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:14px 18px;
+  font:700 14px/1 system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  border-radius:var(--cc-radius);
+  border:1px solid transparent;
+  cursor:pointer;
+  transition:transform .08s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.cc-btn--gold{
+  background:var(--cc-gold);
+  color:var(--cc-gold-ink);
+  box-shadow:var(--cc-shadow);
+}
+.cc-btn--gold:hover{ transform:translateY(-1px); }
+.cc-btn--gold:focus{ box-shadow:var(--cc-focus), var(--cc-shadow); }
+
+.cc-btn--outline{
+  background:transparent;
+  border-color:var(--cc-gold);
+  color:var(--cc-gold);
+}
+.cc-btn--outline:hover{ background:rgba(242,201,76,.08); }
+
+/* ---- Results List (optional styling to match your screenshot) ---- */
+.cc-results{
+  list-style:none; padding:16px 0 0; margin:0;
+  display:flex; flex-direction:column; gap:10px;
+}
+.cc-card{
+  display:grid; grid-template-columns:48px 1fr; gap:12px;
+  align-items:flex-start;
+  background:var(--cc-card);
+  border:1px solid var(--cc-line);
+  border-radius:var(--cc-radius);
+  padding:14px;
+}
+.cc-avatar{
+  width:48px; height:48px; border-radius:50%;
+  background:#2a2a2d; border:2px solid #333;
+}
+.cc-card__body{ display:flex; flex-direction:column; gap:6px; }
+.cc-card__top{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+}
+.cc-name{ margin:0; color:var(--cc-text); font:800 16px/1.2 "League Spartan", system-ui; }
+.cc-rating{ color:var(--cc-sub); font-weight:700; }
+.cc-meta{ margin:0; color:var(--cc-sub); font:600 13px/1.4 system-ui; }
+.cc-desc{ margin:0; color:var(--cc-text); font:500 13px/1.5 system-ui; }
+
+/* ---- Responsive ---- */
+@media (max-width: 720px){
+  .cc-searchbar__form{
+    grid-template-columns: 1fr;
+  }
+  .cc-btn{ width:100%; }
+  .cc-card__top{ flex-direction:column; align-items:flex-start; }
+}
